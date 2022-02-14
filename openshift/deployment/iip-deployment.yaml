@@ -31,8 +31,9 @@ spec:
         - containerPort: 8443
         resources: {}
         volumeMounts:
-        - mountPath: /data/
+        - mountPath: /data/images
           name: data
+          subPath: 'pathdb/files/wsi'
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
