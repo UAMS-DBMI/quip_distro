@@ -23,7 +23,7 @@ spec:
         io.kompose.service: segloader
     spec:
       containers:
-      - image: segloader:latest
+      - image: docker-registry.default.svc:5000/pathdb/segloader:latest
         imagePullPolicy: ""
         name: quip-segloader
         resources: {}

@@ -25,7 +25,7 @@ spec:
         io.kompose.service: imageloader
     spec:
       containers:
-      - image: imageloader:latest
+      - image: docker-registry.default.svc:5000/pathdb/imageloader:latest
         imagePullPolicy: ""
         name: quip-imageloader
         resources: {}
