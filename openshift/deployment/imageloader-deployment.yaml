@@ -28,10 +28,13 @@ spec:
       - image: docker-registry.default.svc:5000/pathdb/imageloader:latest
         imagePullPolicy: ""
         name: quip-imageloader
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
         resources: {}
         volumeMounts:
-        - mountPath: /data/
+        - mountPath: /data/images
           name: data
+          subPath: 'pathdb/files/wsi'
       restartPolicy: Always
       serviceAccountName: ""
       volumes:

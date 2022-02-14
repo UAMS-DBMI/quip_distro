@@ -29,11 +29,11 @@ spec:
         - name: DISABLE_SEC
           value: "true"
         - name: IIP_PATH
-          value: http://ca-iip:8080/fcgi-bin/iipsrv.fcgi
+          value: http://ca-iip-pathdb.apps.dbmi.cloud/fcgi-bin/iipsrv.fcgi
         - name: JWK_URL
           value: https://www.googleapis.com/oauth2/v3/certs
         - name: MONGO_URI
-          value: mongodb://ca-mongo
+          value: mongodb://ca-mongo-pathdb.apps.dbmi.cloud/
         image: docker-registry.default.svc:5000/pathdb/back:latest
         imagePullPolicy: ""
         name: ca-security
