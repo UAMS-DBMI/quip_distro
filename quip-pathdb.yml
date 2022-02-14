@@ -35,7 +35,7 @@ services:
       DISABLE_CSP: "true"
   pathdb:
     build:
-      context: "https://github.com/SBU-BMI/PathDB.git#1.7.1"
+      context: "https://github.com/UAMS-DBMI/PathDB.git#1.7.2"
       args:
         viewer: "v3.9.10"
     container_name: quip-pathdb

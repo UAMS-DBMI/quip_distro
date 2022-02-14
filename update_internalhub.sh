@@ -10,7 +10,7 @@ docker tag quip_distro_imageloader:latest docker-registry-default.apps.dbmi.clou
 docker push docker-registry-default.apps.dbmi.cloud/pathdb/imageloader:latest
 docker tag quip_distro_heatmaploader:latest docker-registry-default.apps.dbmi.cloud/pathdb/heatmaploader:latest
 docker push docker-registry-default.apps.dbmi.cloud/pathdb/heatmaploader:latest
-docker tag quip_distro_segloader:latest docker-registry-default.apps.dbmi.cloud/pathdb/egloader:latest
+docker tag quip_distro_segloader:latest docker-registry-default.apps.dbmi.cloud/pathdb/segloader:latest
 docker push docker-registry-default.apps.dbmi.cloud/pathdb/segloader:latest
 docker tag quip_distro_pathdb:latest docker-registry-default.apps.dbmi.cloud/pathdb/pathdb:latest
 docker push docker-registry-default.apps.dbmi.cloud/pathdb/pathdb:latest
