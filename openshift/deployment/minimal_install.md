@@ -18,8 +18,7 @@ oc apply -f imageloader-deployment.yaml
 
 # Expose
 oc expose svc/quip-pathdb
-oc expose svc/ca-security
-oc expose svc/ca-mongo
-oc expose svc/ca-iip
 
-# Load sample images
+# Load sample images -> from PRISM Sample data
+oc rsync ./pathology/ deployment/imageloader:/data/images
+oc exec deployment/imageloader -- imageloader -src /data/images/example.csv -username admin -password bluecheese2018 -collectionname Public

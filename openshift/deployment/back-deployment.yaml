@@ -29,7 +29,7 @@ spec:
         - name: DISABLE_SEC
           value: "true"
         - name: IIP_PATH
-          value: http://ca-iip-pathdb.apps.dbmi.cloud/fcgi-bin/iipsrv.fcgi
+          value: http://ca-iip/fcgi-bin/iipsrv.fcgi
         - name: JWK_URL
           value: https://www.googleapis.com/oauth2/v3/certs
         - name: MONGO_URI
